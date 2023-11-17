@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        body{
+            background: url(Images/Background-image.jpg);
+            backdrop-filter: blur(2px);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        /*..........................................Navbar...................................*/
+        .navbar{
+            padding: 10px 5%;
+        }
+    nav{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       flex-wrap: wrap;
+    }
+    nav b i{
+        font-size: 40px;
+        color: white;
+        margin-left: -45px;
+        margin-right: 20px;
+        rotate: 90deg;
+    }
+    nav b{
+        font-size: 50px;
+        font-weight: 800;
+        color: aqua;
+        padding-right: 0px;
+        cursor: pointer;
+    }
+    
+    
+    .navbar ul li{
+    font-weight: bold;
+    display: inline-block;
+    margin-left:15px;
+    list-style: none;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0px 0px 2px aqua;
+    padding: 10px 8px;
+    height: 50px;
+    background: transparent;
+    border-radius: 8px;
+    }
+    .navbar ul :hover{
+        opacity: 0.7;
+        color: aqua;
+        transition: 0.5s;
+    }
+    .navbar ul button{
+        width: 140px;
+        height: 50px;
+        color: aqua;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 10px;
+        border-radius: 6px;
+        background:transparent;
+    }
+    .navbar ul button:active{
+        border: solid grey 2px;
+        transition: 0.2s;
+        opacity: 0.2;
+    }
+    .navbar ul button:hover{
+        color: white;
+    }
+     /*..........................................HeaderText...................................*/
+     .headertext{
+        margin: 0px 50px;
+     }
+     .headertext h1{
+        margin-left: 350px;
+    
+     }
+    .headertext ul li{
+        padding-top: 10px;
+        font-size: 16px;
+        list-style: none;
+    }
+    
+    /*.......................................................Login section............................*/
+    .wrapper{
+    background:black;
+    width: 420px;
+    height: 400px;
+    color: white;
+    margin-top: 160px;
+    border: 2px solid rgb(14, 224, 224);
+    box-shadow: 0px 0px 6px aqua ;
+    border-radius: 15px;
+    padding: 10px;
+    backdrop-filter: blur(20px);
+    margin-left: 200px;
+    position: relative;
+    }
+    .wrapper .inputbox{
+    height: 50%;
+    width: 100%;
+    border-radius: 15px;
+    }
+    .inputbox input{
+    width: 75%;
+    height: 25px;
+    border: solid 2px;
+    border-radius: 10px;
+    outline-color: white;
+    border-color: whitesmoke;
+    background: transparent;
+    color: white;
+    padding-left: 10px;
+    
+    }
+    .inputbox input ::placeholder{
+    color: rgb(255, 255, 255);
+    }
+    
+    #checkbox{
+        width: 18px;
+        height: 14px;
+        margin-top: 5px;
+    }
+    .inputbox span{
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    .login{
+    border-radius: 5px;
+    border-color: white;
+    width: 50%;
+    height: 25px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    
+    }
+    .login :hover{
+    color: rgb(24, 222, 222);
+    }
+    .Link{
+    color:aqua;
+    justify-content: space-between;
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    }
+    .Link :hover{
+    color:white;
+    text-decoration: underline aqua solid;
+    }
+    .facebook{
+    border-radius: 5px;
+    border-color: white;
+    width: 48%;
+    height: 30px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 17px;
+    background-color:rgb(30, 48, 80);
+    color: white;
+    }
+    .twitter{
+    border-radius: 5px;
+    border-color: white;
+    width: 45%;
+    height: 30px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 17px;
+    background-color:rgb(30, 48, 80);
+    color: white;
+    }
+    /*...............................................About GTS section............................*/
+    .about{
+        margin: 10px 40px;
+    }
+    .about p{
+        padding: 6px;
+        font-size: 18px;
+    }
+    
+    /*--------------------------------------------------------Footer-section.....................*/
+    .copyright{
+        background: grey;
+        height: 50px;
+        width: 100%;
+        margin-top:30px;
+        position: absolute;
+    }
+    .copyright p{
+        font-weight: bold;
+        padding-top: 12px;
+        margin-left: 100px;
+        color: white;
+    }
+    .copyright .rights{
+        margin-left: 200px; ;
+    }
+    .copyright span {
+        margin-left: 150px;
+        margin-right: 80px;
+        font-size: 20px;
+    }
+    .copyright span i{
+        padding-right: 5px; 
+    }
+    .copyright .fa-brands{
+        color: white;
+    }
+    .copyright .fa-brands:hover{
+        color: aqua;
+    }
+
+
+
+
+
+    /*......................................................Resizing for small or big screens .........................*/
+    @media screen and (max-width:600px){
+        body{
+            background: url(Images/Background-image.jpg);
+            backdrop-filter: blur(2px);
+            background-position: center;
+            color: white;
+        }
+        .navbar ul li{
+            display: none;
+        }
+        .navbar nav b{
+            font-size: 36px;
+         margin-left: 50px;
+        }
+        .navbar i.fa-solid{
+            font-size: 30px;
+        }
+        .navbar nav ul a button{
+            margin-top: 20px;
+        }
+.wrapper{
+    margin-top: 6%;
+    margin-left:-16px;
+    width: 320px;
+    height: 450px;
+}
+.wrapper a button{
+    height: 60px;
+}
+.wrapper a button.login{
+    height: 30px;
+}
+.copyright{
+    margin-top: 100%;
+    height: 100px;
+    width: 100%;
+}
+.copyright p{
+    margin-left: 50px;
+}
+.copyright span{
+    margin-left: 50px;
+}
+.copyright b.rights{
+    margin-left: 130px;
+}
+    }

@@ -1,0 +1,461 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+        box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*............................Navigation bar....................................................*/
+.navbar{
+    background: brown;
+    width: 100%;
+    height: 90px;
+    margin-top: -10px;
+    margin-left: -10px;
+    padding: 20px;
+    position: fixed;
+}
+.navbar span.menu-icon{
+    display: none;
+}
+.navbar a.logo{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+.navbar .logo:hover{
+    color: aqua;
+    transition: 0.5s;
+    opacity: 0.4;
+}
+.navbar a i.fa-solid.fa-code-compare{
+    rotate: 90deg;
+    font-size: 30px;
+    color: aqua;
+}
+.navbar a b{
+    display: none;
+}
+.nav-list a.close-button{
+    display: none;
+}
+
+/*...............................Toggle button...............................................*/
+.navbar .toggle i{
+    font-size: 30px;
+    margin-left: 10%;
+    cursor: pointer;
+}
+.dark-mode{
+    background: black;
+    color: white;
+}
+/*.............................................search-box.................................*/
+.search-box{
+    display: none;
+    float: right;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.................................................... Navbar items.......................*/
+
+.navbar .nav-list{
+   margin-top: -70px;
+   margin-left:45%;
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar .nav-list ul li:hover{
+    color: aqua;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+.navbar .nav-list ul li{
+    background:none;
+   box-shadow: 0px 0px 5px aqua;
+   background: none;
+  padding: 8px 8px;
+ margin-left: 12px;
+  border-radius: 8px;
+  height: 50px;
+  display: inline-block;
+  cursor: pointer; 
+}
+
+.navbar .nav-list ul li{
+    float: left;
+    padding: 5px 8px;
+}
+
+.nav-list a i{
+    color: aqua;
+    font-size: 20px;
+}
+
+
+.nav-list a{
+    color: white;
+}
+
+    /*.......................Headings in the body and footer sections....................*/
+h2, .h2-footer{
+    font-size: 28px;
+    }
+h3{
+        text-decoration: underline;
+        font-size: 16px;
+    }
+   /*...........................................Iframes.....................*/
+iframe.bing-advert{
+    width: 800px;
+    height: 300px;
+    background-image: url(Images/Background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+iframe.youtube-video{
+    width: 600px;
+    height: 400px;
+    background-image: url(Images/Background.avif); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 800px;
+}
+
+/*...........................................Social icons in the footer.............*/
+
+.icons .fa-brands{
+    font-size: 18px;
+    height: 38px;
+    width: 38px;
+    line-height: 38px;
+    color:black;
+    background: rgb(93, 90, 238);
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.icons{
+    margin-left: 1000px;
+    margin-bottom: 10px;
+}
+.icons .fa-brands:hover{
+    color: rgb(212, 37, 130);
+}
+
+/*........................................................Newsletter-section.....................................*/
+.country{
+    background-color: aliceblue;
+    border-radius: 8px;
+    width: 100px;
+    margin-right: 10px; 
+    height: 20px;
+}
+.newsletter{
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.newsletter-sub-btn{
+border-radius: 10px;
+width: 100px;
+height:35px;
+cursor: pointer;
+outline: none;
+border-color:   white;
+background-color:rgb(230, 239, 248);
+}
+.newsletter-sub-btn:active{
+    border-color: red;
+}
+
+
+
+.newsletter-name-email{
+  border-radius: 6px;
+  width: 400px;
+  height: 40px;
+  outline: none;
+  border-color:  white;
+  background-color: rgb(236, 244, 250);
+}
+
+.newsletter-name-email :hover{
+    border-color: red;
+}
+
+
+/*............................................Footer section............................*/
+.GM-logo{
+    margin-left:5%;;
+    margin-top:15px;   
+}
+.GTS-logo{
+    margin-left: 40%;
+}
+.column{
+        float: left;
+        width: 25%;
+        padding: 0px;
+        height: 250px; 
+        margin-top:10px;
+        margin-bottom:0px;
+        text-decoration: none;
+}
+.row:after {
+    text-decoration: none;
+        display: table;
+        clear: both;
+        margin-bottom: -100px;
+}
+.column:nth-child(1), .column:nth-child(2){
+width: 20%;
+}
+
+.column:nth-child(4){
+    width: 35%;
+}
+.last-column{
+    float: right;
+    width: 20%;
+    margin-bottom: 0px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.underline{
+    
+    text-decoration: underline;
+    width: 20%;
+    height: 5px;
+    background: rgb(3, 205, 251);
+    border-radius: 4px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.web-Terms :hover{
+    color: brown;
+    text-decoration: underline rgb(102, 0, 128);
+    font-size: 17px;
+    opacity: 1;
+}
+
+footer{
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+        width:100%;
+        margin-left: 10px;
+        margin-right: 10px;;
+        margin-top: -5px;
+        margin-bottom: -100px;
+}
+.Bottom-footer{
+    background-color: rgb(93, 90, 238);
+    height: 40px;
+    margin-top: 51px;
+    margin-left: -20px;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+/*.....................................Resizing the appearance of the website on different screen sizes...............................*/
+
+
+@media screen and (max-width: 600px){
+    /*..........................Navigation bar section......................*/
+    .navbar{
+        padding-top: 30px;
+        display: flex;
+        justify-content:left;
+        width: 100%;
+        height: 90px;
+        position: fixed;
+    }
+   .navbar .search-box{
+    display: none;
+   }
+
+    .navbar a.logo{
+        font-size: 32px;
+        font-weight: bold;
+        margin-left: 12px;
+        margin-right: 12px;
+        display: flex;
+        justify-content: center;
+    }
+.navbar .logo a i{
+display: none;        
+    }
+    .navbar a i{
+        display: none;
+    }
+.navbar a b.fa-solid.fa-code-compare{
+    display: contents;
+    font-size: 25px;
+    margin-left: 20px;
+    rotate: 45deg;
+    display: none;
+}
+.navbar a b{
+    margin-left: 12px;
+}
+    .toggle{
+       display: flex;
+       justify-content: space-between;
+    }
+.toggle i.fa-solid.fa-circle-half-stroke{
+    font-size: 18px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+   /*....................................Menu list items................................................*/
+   .navbar span.menu-icon{
+    display: contents;
+    margin-top: -5px;
+    color: white;
+    font-size: 30px;
+   }
+   .navbar .nav-list{
+    display: none;
+   }
+ 
+   .navbar .nav-list ul li{
+    color: black;
+    box-shadow: none;
+   }
+   .nav-list a.close-button{
+    display: contents;
+   }
+
+
+/*.....................................Iframes.........................*/
+    iframe.bing-advert{
+        width: 350px;
+        height: 280px;
+    }
+    .bing-advert{
+        width: 20px;
+        height: 10px;
+    }
+    iframe.youtube-video{
+        width:350px ;
+        height: 240px;
+        margin-left: 25px;
+    }
+ 
+/*...........................Headers on the website........................*/
+    h2, .h2-footer{
+        font-size: 20px;
+    }
+h3{
+    font-size: 10px;
+}
+h4{
+    display: none;
+   }
+ /*.....................................footer section...................*/
+ .GM-logo{
+    margin-left:5%;;
+    margin-top:15px;   
+}
+.GTS-logo{
+    display: none;
+}
+    .column {
+        font-size: 8px;
+        display: block;
+        width: 50%;
+    }
+
+    .column a{
+        font-size: 12px;
+    }
+    .last-row{
+        margin-left: -60px;
+    }
+    .last-column{
+        height: 30px;
+        width: 10%;
+        width: 120px;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        margin-left: 2px;
+        background: none;
+    }
+    .web-Terms{
+        margin-left: -5px;
+    }
+    .column:nth-child(1), .column:nth-child(2),  .column:nth-child(3){
+        width: 30%;
+        }
+   .column:nth-child(4){
+    width: 8%;
+    
+    }
+/*.............................Social icons in the footer-section............*/
+.icons{
+    width: 10px;
+    height: 10px;
+    margin-left: 50px;
+    display: flex;
+    word-spacing: 20px;
+    margin-top: 200px ;
+    margin-bottom: 15px;
+    }
+.icons .fa-brands{
+    font-size: 15px;
+    width: 35px;
+    height: 35px; 
+}
+    .country{
+        width: 55px;
+        font-size: 10px;
+        margin-right: 25px;
+        margin-left: -20px;
+      }
+    .newsletter-name-email{
+        width: 100px;
+        height: 30px;
+        margin-right:2px;
+        margin-left: -25px;
+    }
+  .newsletter-sub-btn{
+    width: 62px;
+    font-size: 12px;
+  }
+
+.Bottom-footer{
+    margin-top: 120px;
+    height: 80px;
+    padding-top:10px;
+    font-size: 14px;
+    margin-left: -18px;
+    margin-right: -80px;
+}
+/*.....................................................THE END #GRIFFIN TECH SOLUTIONS..........................*/
+    }
